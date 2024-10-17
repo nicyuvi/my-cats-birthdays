@@ -1,5 +1,11 @@
 import { makeRequest } from "./lib/request";
 
+// async function fetchMovies() {
+//   const response = await fetch('/movies');
+//   // waits until the request completes...
+//   console.log(response);
+// }
+
 // TODO: use native fetch instead of makeRequest
 async function getRickAndMortyAPI() {
   const url =
