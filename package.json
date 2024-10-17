@@ -1,0 +1,15 @@
+{
+  "name": "my-cats-birthdays",
+  "version": "1.0.0",
+  "description": "A simple web app to display my cat's birthdays",
+  "scripts": {
+    "start": "tsc && http-server",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Nicolis Yuvienco",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

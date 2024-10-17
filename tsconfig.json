@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./build", // Output directory for compiled JS files
+    "rootDir": "./src", // Root directory of your TypeScript files
+    "target": "ES6", // Specify ECMAScript target version (you can also use "ESNext")
+    // "module": "ESNext",  https://bobbyhadz.com/blog/typescript-uncaught-referenceerror-exports-is-not-defined
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow interoperation between CommonJS and ES modules
+    "skipLibCheck": true, // Skip checking type definitions from node_modules
+    "baseUrl": "./src", // Base directory to resolve non-relative module names
+    "paths": {
+      "@/*": ["*"] // Alias '@' to the root of the 'src' directory
+    }
+  },
+  "include": ["src/**/*.ts"], // Include TypeScript files in the 'src' folder
+  "exclude": ["node_modules", "build"] // Exclude node_modules
+}

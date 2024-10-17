@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <link href="css/style.css" rel="stylesheet" />
-    <style></style>
-    <script src="./app.js" />
+    <!-- <link href="css/style.css" rel="stylesheet" /> -->
+    <!-- <style></style> -->
   </head>
   <body>
     <p>api contents:</p>
     <p class="name">name:</p>
     <p id="status" class="status">status:</p>
   </body>
+  <!-- https://bobbyhadz.com/blog/typescript-uncaught-referenceerror-exports-is-not-defined -->
+  <script>
+    var exports = {};
+  </script>
+  <script type="module" src="build/app.js"></script>
 </html>
