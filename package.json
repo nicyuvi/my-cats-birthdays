@@ -4,12 +4,15 @@
   "description": "A simple web app to display my cat's birthdays",
   "scripts": {
     "start": "tsc && http-server",
-    "build": "tsc"
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "Nicolis Yuvienco",
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
   }
 }
