@@ -1,13 +1,21 @@
-# A Simple Web App That Displays My Cat's Birthdays with No Frameworks
+# A Simple Web App That Displays My Cat's Birthdays
+
+sqlite/express/html/css/ts
 
 ## Local Development
 
 ```
 git clone
+npm run dev
+```
+
+## Start Production Server
+
+```
 npm start
 ```
 
-## Build for Production (sorta)
+## Build for Production
 
 ```
 npm run build
