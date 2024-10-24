@@ -1,20 +1,13 @@
-import { getCharacter } from '@/api/get-character'
+// Application Start
+import { RouteConfig } from './App_Start/RouteConfig.js'
 
-// TODO:
-// Access res properties
-// - client side js goes here (DOM manipulation)
-
-function onDOMLoad() {
-  document.addEventListener('DOMContentLoaded', async (): Promise<void> => {
-    await getCharacter()
-
-    // const div = document.getElementById("status");
-    // div.insertAdjacentHTML("beforeend", ` ${res}`);
-  })
+class MvcApplication {
+  public Application_Start(): void {
+    // register routes
+    const route_config = new RouteConfig()
+    route_config.RegisterRoutes()
+  }
 }
 
-function main() {
-  onDOMLoad()
-}
-
-main()
+const app = new MvcApplication()
+app.Application_Start()

@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "A simple web app to display my cat's birthdays",
   "scripts": {
-    "start": "tsc && http-server",
+    "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm start\"",
+    "start": "npx tsc && node ./build/app.js",
     "build": "npx tsc"
   },
   "keywords": [],
   "author": "Nicolis Yuvienco",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "http-server": "^14.1.1"
   },
@@ -19,8 +21,8 @@
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
     "prettier": "3.3.3",
-    "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.11.0"
   }
